@@ -1,4 +1,4 @@
-package com.example.repository.remote
+package com.example.repository.repository.remote
 
 
 sealed class Resource<out T> {
