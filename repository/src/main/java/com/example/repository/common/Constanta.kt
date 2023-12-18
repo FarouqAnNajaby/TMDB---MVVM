@@ -1,6 +1,8 @@
 package com.example.repository.common
 
 object Constanta {
+    const val DB_NAME = "DBMovie"
+    const val DB_VERSION = 2L
     const val BASE_URL = "https://api.themoviedb.org/3/movie/"
     const val AUTH_TOKEN = "Authorization"
     const val ACCEPT = "Accept"

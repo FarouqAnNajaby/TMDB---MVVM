@@ -1,6 +1,9 @@
 plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'kotlin-parcelize'
+    id 'realm-android'
 }
 
 android {
@@ -48,6 +51,11 @@ dependencies {
     implementation 'androidx.core:core-ktx:1.9.0'
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.5.1'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1'
+
+    //Shared preferences
+    implementation 'com.chibatching.kotpref:kotpref:2.13.1'
+    implementation 'com.chibatching.kotpref:enum-support:2.13.1'
+    implementation 'com.chibatching.kotpref:gson-support:2.13.1'
 
     //Koin
     implementation "io.insert-koin:koin-android:3.1.4"

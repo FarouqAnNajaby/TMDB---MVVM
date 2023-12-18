@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Movie App</string>
+    <string name="text_overview">Overview</string>
+    <string name="text_price">Price :</string>
+    <string name="text_popularity">Popularity :</string>
+    <string name="text_release">Release :</string>
+    <string name="text_title">Title :</string>
 </resources>

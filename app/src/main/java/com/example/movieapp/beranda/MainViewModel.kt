@@ -5,5 +5,9 @@ import androidx.lifecycle.asLiveData
 import com.example.repository.repository.MovieRepository
 
 class MainViewModel(private val movieRepository: MovieRepository) : ViewModel(){
+
     fun getMovies() = movieRepository.getMovies().asLiveData()
+
+    fun getMoviesFromLocal() = movieRepository.getMoviesLocal()
+
 }

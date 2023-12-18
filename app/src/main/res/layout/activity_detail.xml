@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".detail.DetailActivity">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="5dp"
+        android:background="@drawable/bg_ripple_5dp"
+        android:layout_margin="22dp"/>
+
+    <TextView
+        android:id="@+id/tvMovie"
+        style="@style/text_title_halaman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Judul Movie"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toEndOf="@+id/btnBack"
+        app:layout_constraintTop_toTopOf="@+id/btnBack"
+        app:layout_constraintBottom_toBottomOf="@+id/btnBack"/>
+
+    <ImageView
+        android:id="@+id/imgMovie"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBack"
+        tools:src="@mipmap/ic_launcher"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_title"
+        app:layout_constraintStart_toEndOf="@id/imgMovie"
+        app:layout_constraintTop_toTopOf="@id/imgMovie"
+        android:layout_marginStart="16dp"
+        style="@style/text_sub_title"/>
+
+    <TextView
+        android:id="@+id/tvFillTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Judul film nanti"
+        app:layout_constraintStart_toEndOf="@id/tvTitle"
+        app:layout_constraintTop_toTopOf="@id/imgMovie"
+        android:layout_marginStart="16dp"
+        style="@style/text_fill_title"/>
+
+    <TextView
+        android:id="@+id/tvRelease"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_release"
+        app:layout_constraintStart_toEndOf="@id/imgMovie"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        style="@style/text_sub_title"/>
+
+    <TextView
+        android:id="@+id/tvFillRelease"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Judul film nanti"
+        app:layout_constraintStart_toEndOf="@id/tvRelease"
+        app:layout_constraintTop_toBottomOf="@id/tvFillTitle"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="16dp"
+        style="@style/text_fill_title"/>
+
+    <TextView
+        android:id="@+id/tvPopularity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_popularity"
+        app:layout_constraintStart_toEndOf="@id/imgMovie"
+        app:layout_constraintTop_toBottomOf="@id/tvRelease"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        style="@style/text_sub_title"/>
+
+    <TextView
+        android:id="@+id/tvFillPopularity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Judul film nanti"
+        app:layout_constraintStart_toEndOf="@id/tvPopularity"
+        app:layout_constraintTop_toBottomOf="@id/tvFillRelease"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="16dp"
+        style="@style/text_fill_title"/>
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_price"
+        app:layout_constraintStart_toEndOf="@id/imgMovie"
+        app:layout_constraintTop_toBottomOf="@id/tvPopularity"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        style="@style/text_sub_title"/>
+
+    <TextView
+        android:id="@+id/tvFillPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Judul film nanti"
+        app:layout_constraintStart_toEndOf="@id/tvPrice"
+        app:layout_constraintTop_toBottomOf="@id/tvFillPopularity"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="16dp"
+        style="@style/text_fill_title"/>
+
+    <TextView
+        android:id="@+id/tvOverview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_overview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgMovie"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        style="@style/text_sub_title"/>
+
+    <View
+        android:layout_width="0dp"
+        android:visibility="visible"
+        android:layout_height="1dp"
+        app:layout_constraintStart_toStartOf="@+id/tvOverview"
+        app:layout_constraintEnd_toEndOf="@+id/tvOverview"
+        app:layout_constraintTop_toBottomOf="@+id/tvOverview"
+        android:background="@color/blue_secondary"/>
+
+    <TextView
+        android:id="@+id/tvFillOverview"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        tools:text="Judul film nanti"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvOverview"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="20dp"
+        style="@style/text_fill_title"/>
+
+    <ProgressBar
+        android:id="@+id/loadingView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
