@@ -12,6 +12,18 @@
         <item name="android:textColor">@color/black</item>
     </style>
 
+    <style name="text_title_blue">
+        <item name="fontFamily">@font/nunito_semibold</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/blue_secondary</item>
+    </style>
+
+    <style name="text_hint">
+        <item name="fontFamily">@font/nunito_light</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/grey</item>
+    </style>
+
     <style name="text_title_halaman">
         <item name="fontFamily">@font/nunito_bold</item>
         <item name="android:textSize">18sp</item>

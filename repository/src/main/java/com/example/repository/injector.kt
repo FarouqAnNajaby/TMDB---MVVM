@@ -1,7 +1,9 @@
 package com.example.repository
 
+import com.example.repository.repository.AuthRepository
 import com.example.repository.repository.MovieRepository
 import com.example.repository.repository.local.database.MovieDB
+import com.example.repository.repository.local.preference.AuthPref
 import com.example.repository.repository.network.getOkHttp
 import com.example.repository.repository.network.getService
 import com.example.repository.repository.remote.service.ApiService
@@ -12,6 +14,8 @@ import org.koin.dsl.module
 
 val repositoryModule = module {
 
+    single { AuthPref }
+
     single { Realm.getDefaultInstance() }
 
     single { getOkHttp(androidContext()) }
@@ -21,4 +25,5 @@ val repositoryModule = module {
     single { MovieDB() }
 
     single { MovieRepository(get(),get()) }
+    single { AuthRepository(get()) }
 }

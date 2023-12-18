@@ -5,4 +5,11 @@
     <string name="text_popularity">Popularity :</string>
     <string name="text_release">Release :</string>
     <string name="text_title">Title :</string>
+    <string name="login">Login</string>
+    <string name="name">Nama</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="text_login">Login</string>
+    <string name="email_empty">Email is empty or not valid</string>
+    <string name="password_empty">Password is empty or not valid</string>
 </resources>
