@@ -18,6 +18,7 @@ class AuthRepository(private val authPrefs: AuthPref) {
         return a != null
     }
 
+    fun logout() = authPrefs.logout()
 
     fun loginWithEmail(iname: String,iemail: String, ipassword: String) = flow {
         emit(Resource.Loading)
